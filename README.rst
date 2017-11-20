@@ -24,16 +24,23 @@ Better `inspect` for Python.
 * Free software: MIT license
 * Documentation: https://outspect.readthedocs.io.
 
+Install
+-------
+
+::
+
+  pip install outspect
+
 Usage
 -----
 
 ::
 
+  In []: from outspect import *
+
   In []: import django
 
   In []: import django.http
-
-  In []: from outspect import *
 
   In []: classes(django.http)
   Out[]: ['BadHeaderError', 'FileResponse', 'Http404', 'HttpRequest', 'HttpResponse', 'HttpResponseBadRequest', 'HttpResponseForbidden', 'HttpResponseGone', 'HttpResponseNotAllowed', 'HttpResponseNotFound', 'HttpResponseNotModified', 'HttpResponsePermanentRedirect', 'HttpResponseRedirect', 'HttpResponseServerError', 'JsonResponse', 'QueryDict', 'R11awPostDataException', 'SimpleCookie', 'StreamingHttpResponse', 'UnreadablePostError']

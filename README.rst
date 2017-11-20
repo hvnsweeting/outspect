@@ -18,17 +18,39 @@ outspect
      :alt: Updates
 
 
-Python Boilerplate contains all the boilerplate you need to create a Python package.
+Better `inspect` for Python.
 
 
 * Free software: MIT license
 * Documentation: https://outspect.readthedocs.io.
 
+Usage
+-----
+
+::
+
+  In []: import django
+
+  In []: import django.http
+
+  In []: from outspect import *
+
+  In []: classes(django.http)
+  Out[]: ['BadHeaderError', 'FileResponse', 'Http404', 'HttpRequest', 'HttpResponse', 'HttpResponseBadRequest', 'HttpResponseForbidden', 'HttpResponseGone', 'HttpResponseNotAllowed', 'HttpResponseNotFound', 'HttpResponseNotModified', 'HttpResponsePermanentRedirect', 'HttpResponseRedirect', 'HttpResponseServerError', 'JsonResponse', 'QueryDict', 'R11awPostDataException', 'SimpleCookie', 'StreamingHttpResponse', 'UnreadablePostError']
+
+  In []: import logging
+
+  In []: pub_funcs(logging)
+  Out[]: ['addLevelName', 'basicConfig', 'captureWarnings', 'critical', '<lambda>', 'debug', 'disable', 'error', 'exception', 'critical', 'getLevelName', 'getLogRecordFactory', 'getLogger', 'getLoggerClass', 'info', 'log', 'makeLogRecord', 'setLogRecordFactory', 'setLoggerClass', 'shutdown', 'warn', 'warning']
+
+  In []: constants(logging)
+  Out[]: ['BASIC_FORMAT', 'CRITICAL', 'DEBUG', 'ERROR', 'FATAL', 'INFO', 'NOTSET', 'WARN', 'WARNING', '_STYLES']
+
 
 Features
 --------
 
-* TODO
+- Inspecting objects, modules ...
 
 Credits
 ---------

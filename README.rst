@@ -1,5 +1,5 @@
 ========
-outspect
+outspect: inspect for Humans
 ========
 
 
@@ -20,7 +20,6 @@ outspect
 
 Better `inspect` for Python.
 
-
 * Free software: MIT license
 * Documentation: https://outspect.readthedocs.io.
 
@@ -34,7 +33,7 @@ Install
 Usage
 -----
 
-::
+Best used for interactive discovery::
 
   In []: from outspect import *
 
@@ -57,7 +56,7 @@ Usage
 Features
 --------
 
-- Inspecting objects, modules ...
+- Inspecting objects, modules, classes ...
 
 Credits
 ---------
